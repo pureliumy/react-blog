@@ -1,0 +1,42 @@
+.Post{
+    margin-top: 20px;
+    text-align: left;
+}
+
+.Post h3, h4 {
+    text-align: center;
+}
+
+.Post p {
+    text-indent: 2em;
+    padding: 10px 0;
+}
+
+.Post .comments {
+    border-top: 1px solid #eee;
+}
+
+.comments .single {
+    border: 1px solid #eee;
+    margin: 10px 0;
+    padding: 0 10px;
+}
+
+.comments .single .name {
+    font-weight: 600;
+    color: #888;
+    display: inline-block;
+    margin-right: 12px;
+}
+
+.comments .single .time {
+    color: #888;
+    font-size: 13px;
+}
+
+.comments hr {
+    height: 1px;
+    width: 100%;
+    background-color:#eee; 
+    border: none;
+}

@@ -1,0 +1,15 @@
+.About{
+    text-align: left;
+    margin-top: 20px;
+    color: #333;
+}
+
+.About h3 {
+    text-align: center;
+}
+
+.About p{
+    /* line-height: 1.7; */
+    padding: 10px 0;
+    text-indent: 2em;
+}

@@ -1,0 +1,28 @@
+.Nav{
+    box-shadow: 0 1px 0 0 #eee;
+    height: 50px;
+    padding: 0 20%;
+}
+
+.Nav nav{
+    line-height: 50px;
+    float: right;
+}
+
+.Nav a{
+    display: inline-block;
+    padding: 0 2em;
+    text-decoration: none;
+    color: #333;
+}
+
+.Nav a:hover{
+    border-bottom: 1px solid #666;
+    color: #000;
+}
+
+.Nav .logo {
+    float: left;
+    line-height: 50px;
+  }
+  

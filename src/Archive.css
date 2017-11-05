@@ -1,0 +1,9 @@
+.Archive {
+    text-align: left;
+    padding: 0 30px;
+}
+
+.Archive a {
+    text-decoration: underline;
+    color: #333;
+}

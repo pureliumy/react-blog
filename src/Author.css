@@ -1,0 +1,12 @@
+.author {
+    text-align: left;
+}
+
+.author a {
+    text-decoration: underline;
+    color: #333;
+}
+
+.author a.AuthorBrief {
+    border: 1px solid #eee;
+}

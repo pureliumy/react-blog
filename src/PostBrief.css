@@ -1,0 +1,20 @@
+.post-brief {
+    margin: 40px 0;
+}
+
+.post-brief .post-header {
+    width: 100%;
+    float: left;
+    overflow: hidden;
+}
+
+.post-brief .post-title {
+    float: left;
+}
+
+.post-brief .post-author {
+    font-size: 14px;
+    float: right;
+    margin-right: 10px;
+    
+}
