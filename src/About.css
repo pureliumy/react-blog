@@ -4,11 +4,30 @@
     color: #333;
 }
 
+.About a {
+    text-decoration: underline;
+    color: #333;
+}
+
 .About h3 {
     text-align: center;
+}
+
+.About h4 {
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    margin-top: 20px;
 }
 
 .About p{
     padding: 10px 0;
     text-indent: 2em;
+}
+
+.overview {
+    margin: 10px 0 20px;
+}
+
+.overview p {
+    padding: 0;
 }
