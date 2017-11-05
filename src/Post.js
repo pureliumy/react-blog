@@ -8,14 +8,18 @@ const Post = ({ post, author, comment, match, addComment }) => {
   const thisPost = post[match.params.id - 1]
   const postTitle = thisPost.title
   const postHTML = thisPost.content
+
   const postAuthor = author.filter((author) => (
     author.id === thisPost.author
   ))[0].name
+
   const setHTML = { __html: `${postHTML}` }
+
   const postComment = comment.filter((c) => (
     c.post === +match.params.id
   ))
 
+  
   return (
     <div className='Post'>
       <h3>{postTitle}</h3>

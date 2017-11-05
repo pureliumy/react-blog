@@ -15,35 +15,35 @@ let post, author, comment
 
 // 本地没有存储数据，则将初始数据存入localStorage并更新local
 if (!window.localStorage.getItem('data')) {
-    const dataString = JSON.stringify(data)
-    window.localStorage.setItem('data', dataString)
+  const dataString = JSON.stringify(data)
+  window.localStorage.setItem('data', dataString)
 } else {
-    local = true
+  local = true
 }
 
 if (local) {
-    const dataString = window.localStorage.getItem('data');
-    ({ post, author, comment } = JSON.parse(dataString))
+  const dataString = window.localStorage.getItem('data');
+  ({ post, author, comment } = JSON.parse(dataString))
 } else {
-    ({ post, author, comment } = data)
+  ({ post, author, comment } = data)
 }
 
 const state = {
-    nextCommentId: comment.length + 2,
-    nextUserId: 9,
-    post: post,
-    author: author,
-    comment: comment
+  nextCommentId: comment.length + 2,
+  nextUserId: 9,
+  post: post,
+  author: author,
+  comment: comment
 }
 
 const store = createStore(onlyReducer, state)
 
 ReactDOM.render((
-    <Provider store={store}>
-        <Router>
-            <App />
-        </Router>
-    </Provider>
+  <Provider store={store}>
+    <Router>
+      <App />
+    </Router>
+  </Provider>
 ), document.getElementById('root'))
 
 registerServiceWorker();
